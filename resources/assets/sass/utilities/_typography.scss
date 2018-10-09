@@ -1,0 +1,51 @@
+/* ==========================================================================
+*
+* Utilities
+* Typography
+*
+* - Font weight helpers
+* - Font size
+* - Letter Spacing
+* - Letter Spacing Negative
+* - Line Height
+** ========================================================================== */
+
+/* Font weight helpers */
+.fw-vthin {font-weight: 100 ;}
+.fw-thin {font-weight: 300 ;}
+.fw-normal {font-weight: 400 ;}
+.fw-semibold {font-weight: 600 ;}
+.fw-bold {font-weight: 700 ;}
+.fw-extrabold {font-weight: 800 ;}
+
+/* Font size */
+.fs-smaller {font-size: 70% ;}
+.fs-small {font-size: 90% ;}
+.fs-big {font-size: 110% ;}
+.fs-bigger {font-size: 140% ;}
+.fs-large {font-size: 200% ;}
+
+@for $i from 7 through 31 {
+  .fs-#{$i *2} {
+    font-size: ($i * 2)+px;
+  }
+}
+
+/* Letter spacing */
+@for $i from 1 through 10  {
+  .lt-spacing-#{$i} {
+    letter-spacing: ($i * .10)+rem;
+  }
+
+  .lt-spacing-neg-#{$i} {
+    letter-spacing: -($i * .10)+rem;
+  }
+}
+
+/* Line Height */
+@for $i from 5 through 31{
+  .lh-#{$i * 2} {
+    line-height: ($i * 2)+px;
+  }
+}
+

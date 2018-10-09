@@ -1,0 +1,111 @@
+/* ==========================================================================
+*
+* Buttons
+* Custom button classes
+*
+* -
+** ========================================================================== */
+@import 'layout';
+@import 'variables';
+
+
+/* Buttons styles */
+/*** Btn Lined (ghost) */
+.btn-lined { border-width: 2px; background: none; color: #fff; text-shadow: none; padding: 7px 20px; line-height: 1.6; box-shadow: none;
+	font-size: 14px; font-weight: 700; border-style: solid; border-radius: 3px; border-color: #fff; -webkit-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+.btn-lined:hover { border-color: rgba(255,255,255,.7); color: #fff;}
+/* Btn Lined - Skewed style */
+.btn-lined.btn-skewed { border:0; background: none; position: relative; }
+.btn-lined.btn-skewed:before { content:''; border: 2px solid #fff; border-radius: 4px; position:absolute; top:0; left:0; right:0; bottom: 0;
+	-webkit-transform:skewX(-8deg); -ms-transform:skewX(-8deg); transform:skewX(-8deg);}
+.btn-lined.btn-skewed:hover:before { border-color: rgba(255,255,255,.7); }
+/* Btn Lined Dark (ghost) */
+.btn-lined.lined-dark { color: #242424; border-color: #242424;}
+.btn-lined.lined-dark:hover { color: #343434;}
+/* Btn Lined DARK - Skewed style */
+.btn-lined.lined-dark.btn-skewed { border:0; background: none; position: relative; }
+.btn-lined.lined-dark.btn-skewed:before { content:''; border: 2px solid #242424; border-radius: 4px; position:absolute; top:0; left:0;
+	right:0; bottom: 0; -webkit-transform:skewX(-8deg); -ms-transform:skewX(-8deg); transform:skewX(-8deg);}
+.btn-lined.lined-dark.btn-skewed:hover:before { border-color: rgba(0,0,0,.7); }
+/* Btn Lined Dark (ghost) */
+.btn-lined.lined-gray { color: #8E8E8E; border-color: #8E8E8E;}
+.btn-lined.lined-gray:hover { color: #454545;}
+/* Btn Lined Gray - Skewed style */
+.btn-lined.lined-gray.btn-skewed { border:0; background: none; position: relative; }
+.btn-lined.lined-gray.btn-skewed:before { content:''; border: 2px solid #8E8E8E; border-radius: 4px; position:absolute; top:0; left:0; right:0;
+	bottom: 0; -webkit-transform:skewX(-8deg); -ms-transform:skewX(-8deg); transform:skewX(-8deg);}
+.btn-lined.lined-gray.btn-skewed:hover:before { border-color: rgba(0,0,0,.4); }
+/* Button Lined Full Light */
+.btn-lined.lined-full-light { color: #242424; border-color: #fff; background: rgba(255, 255, 255, 0.8); }
+.btn-lined.lined-full-light:hover { color: #343434; background-color: #fff;}
+/* Button Lined Full Dark */
+.btn-lined.lined-full-dark { color: #e0e0e0; border-color: #000; background: rgba(0, 0, 0, 0.8); }
+.btn-lined.lined-full-dark:hover { color: #f9f9f9; background-color: #000;}
+/* Button Lined Custom */
+.btn-lined.lined-custom { color: $primary-color; border-color: $primary-color;}
+
+/*** Filled buttons */
+.btn-fullwhite,
+.btn-fullblack,
+.btn-fullcolor { border-width: 0;}
+.btn-fullwhite,
+.btn-fullblack,
+.btn-fullcolor,
+.btn-default,
+.btn-primary,
+.btn-success,
+.btn-info,
+.btn-warning,
+.btn-danger,
+.btn-link { text-shadow: none; padding: 10px 20px; line-height: 1.6; box-shadow: none; font-size: 13px; font-weight: 700; border-style: solid;
+	border-radius: 3px; -webkit-transition: background-color .15s ease-out; transition: background-color .15s ease-out;}
+
+/*** Btn FullColor */
+.btn-fullcolor,
+.btn-fullcolor:focus { background-color: $primary-color; color: #fff;}
+.btn-fullcolor:hover {color: #fff;}
+/*** Btn Fullwhite */
+.btn-fullwhite { background-color: #fff; color: #242424;}
+.btn-fullwhite:hover {color: #353535; background-color: rgba(255,255,255,0.85);}
+/*** Btn Fullblack */
+.btn-fullblack { background-color: #090909; color: #f9f9f9;}
+.btn-fullblack:hover {color: #eee; background-color: rgba(0,0,0,0.85);}
+.btn-fullcolor:hover,.btn-fullcolor.btn-skewed:hover:before,.cart-container .buttons .button.wc-forward:hover {background-color: $secondary-color;
+	color: #fff !important;}
+/* Filled buttons - Skewed style */
+.btn-fullwhite.btn-skewed,
+.btn-fullblack.btn-skewed,
+.btn-fullcolor.btn-skewed,
+.btn-fullwhite.btn-skewed:hover,
+.btn-fullblack.btn-skewed:hover,
+.btn-fullcolor.btn-skewed:hover { border:0; background: none; position: relative; z-index: 0;}
+.btn-fullwhite.btn-skewed:before,
+.btn-fullblack.btn-skewed:before,
+.btn-fullcolor.btn-skewed:before { content:''; border-radius: 4px; position:absolute; top:0; left:0; right:0; bottom: 0;
+	-webkit-transform:skewX(-8deg); -ms-transform:skewX(-8deg); transform:skewX(-8deg); -webkit-transition:background-color .2s ease-in-out;
+	transition:background-color .2s ease-in-out; z-index: -1;}
+/*** Btn FullColor */
+.btn-fullcolor.btn-skewed:before { background-color: $primary-color; }
+/*** Btn Fullwhite */
+.btn-fullwhite.btn-skewed:before { background-color: #fff; }
+.btn-fullwhite.btn-skewed:hover:before { background-color: rgba(255,255,255,0.85);}
+/*** Btn Fullblack */
+.btn-fullblack.btn-skewed:before { background-color: #090909; }
+.btn-fullblack.btn-skewed:hover:before { background-color: rgba(0,0,0,0.85);}
+
+/* Btn sizing presets */
+.btn-group-lg>.btn, .btn-lg { padding: 20px 30px; font-size: 18px; line-height: 1.3333333; }
+.btn-group-lg>.btn.btn-lined, .btn-lg.btn-lined {padding: 18px 30px; }
+.btn-group-md>.btn, .btn-md { padding: 16px 25px; font-size: 14px; line-height: 1.3333333; }
+.btn-group-md>.btn.btn-lined, .btn-md.btn-lined {padding: 14px 25px; }
+.btn-group-sm>.btn, .btn-sm { padding: 5px 10px 4px; font-size: 12px; line-height: 1.5; font-weight: 600; }
+.btn-group-sm>.btn.btn-lined, .btn-sm.btn-lined {padding: 3px 10px 2px; }
+.btn-group-xs>.btn, .btn-xs { padding: 1px 5px; font-size: 12px; line-height: 1.6; font-weight: 400; }
+.btn-group-xs>.btn.btn-lined, .btn-xs.btn-lined {padding: 1px 5px; }
+
+/* Button element */
+.btn-element > span,
+.btn-element > i {vertical-align: middle; display: inline-block;}
+.btn-element > span + i {margin-left:10px}
+.btn-element > i + span {margin-left:10px}

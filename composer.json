@@ -1,0 +1,43 @@
+{
+    "name": "lamplightsolutions/laravelthemefrontendutilities",
+    "description": "Frontend style utility classes",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Eddie Padin",
+            "email": "contact@lamplightsolutions.net",
+            "homepage": "https://www.lamplightsolutions.net"
+        }
+    ],
+    "homepage": "https://github.com/lamplightsolutions/laravelthemefrontendutilities",
+    "keywords": ["Laravel", "LaravelThemeFrontendUtilities"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LamplightSolutions\\LaravelThemeFrontendUtilities\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LamplightSolutions\\LaravelThemeFrontendUtilities\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LamplightSolutions\\LaravelThemeFrontendUtilities\\LaravelThemeFrontendUtilitiesServiceProvider"
+            ],
+            "aliases": {
+                "LaravelThemeFrontendUtilities": "LamplightSolutions\\LaravelThemeFrontendUtilities\\Facades\\LaravelThemeFrontendUtilities"
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+//-------------------- Paths --------------------//
+$assetPath: "../";
+$assetPathAdmin: "#{$assetPath}admin_assets/dist/";
+$fontPath: "#{$assetPath}fonts/";
+$imgPath: "#{$assetPath}images/";
+$imgPathAdmin: "#{$assetPathAdmin}images/";
+
+//-------------------- Base Colors --------------------//
+//$body-color: 					#f5f8fa;
+$body-text-color: #42494b;
+$heading-color:                 #232122;
+
+//Public
+$primary-color:                     #007bbe;
+$primary-color-ext:                 #0190e2;
+$secondary-color: 				    #007AFF;
+$secondary-color-ext:               #E0F1FF;
+$third-color: 					    #D9b44a;
+$member-third-color-ext:               #0D3938;
+$member-fourth-color: 					#F68A15;
+$fourth-color-ext: 					#F68A15;
+
+//$border-color: 			        #ededed;
+//$border-color-2: 			    #e1e8ed;
+
+
+//-------------------- Spacing --------------------//
+$spacer:                     1rem !default;
+$spacer-x:                   $spacer !default;
+$spacer-y:                   $spacer !default;
+
+//-------------------- Switches --------------------//
+$custom-control-description-disabled-color: #868e96;
+$switch-height: calc(#{$input-height} * .8) !default;
+$switch-height-sm: calc(#{$input-height-sm} * .8) !default;
+$switch-height-lg: calc(#{$input-height-lg} * .8) !default;
+$switch-border-radius: $switch-height !default;
+$switch-bg: $custom-control-indicator-bg !default;
+$switch-checked-bg: map-get($theme-colors, 'primary') !default;
+$switch-disabled-bg: $custom-control-indicator-disabled-bg !default;
+$switch-disabled-color: $custom-control-description-disabled-color !default;
+$switch-thumb-bg: $white !default;
+$switch-thumb-border-radius: 50% !default;
+$switch-thumb-padding: 2px !default;
+$switch-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(map-get($theme-colors, 'primary'), .25);
+$switch-transition: .2s all !default;

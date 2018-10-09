@@ -1,0 +1,76 @@
+/* ==========================================================================
+*
+* Layouts
+* Custom layout classes
+*
+* - Container Sizing
+* - Responsive Sizing
+* - Media Queries
+** ========================================================================== */
+
+
+//---------------------- Container Sizing ---------------//
+$container_lg:     1090px;
+
+// breakpoints
+$XS:    479px;
+$S:     767px;
+$M:     991px;
+$L:     1199px;
+$XL:    1399px;
+
+//-------------------- Responsive sizes -------------------- //
+$extra-large-device-width: 1400px; //Extra Large Devices (less than 1399px)
+$large-device-width: 1200px; // Large devices (desktops, less than 1199px)
+$medium-device-width: 992px; // Medium devices (tablets, less than 992px)
+$small-device-width: 768px;	// Small devices (landscape phones, less than 767px)
+$extra-small-device-width: 480px; // Extra small devices (portrait phones, less than 480px)
+
+
+// media queries
+@mixin MQ($canvas) {
+  @if $canvas == XS {
+    @media only screen and (min-width: $XS) { @content; }
+  }
+  @else if $canvas == S {
+    @media only screen and (min-width: $S) { @content; }
+  }
+
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) { @content; }
+  }
+  @else if $canvas == XL {
+    @media only screen and (min-width: $XL) { @content; }
+  }
+  @else if $canvas == XS-S {
+    @media only screen and (min-width: $XS) and (max-width: $S) {@content}
+  }
+  @else if $canvas == S-M {
+    @media only screen and (min-width: $S) and (max-width: $M) {@content}
+  }
+  @else if $canvas == M-L {
+    @media only screen and (min-width: $M) and (max-width: $L) {@content}
+  }
+  @else if $canvas == L-XL {
+    @media only screen and (min-width: $L) and (max-width: $XL) {@content}
+  }
+  @else if($canvas== mobile) {
+    @media only screen and (max-width: $extra-small-device-width){@content};
+  }
+  @else if($canvas== tablet) {
+    @media only screen and (max-width: $small-device-width){@content};
+  }
+  @else if $canvas == tablet-landscape {
+    @media only screen and (max-width: $medium-device-width){@content}
+  }
+  @else if $canvas == laptop {
+    @media only screen and (max-width: $large-device-width) {@content}
+  }
+  @else if($canvas == desktop) {
+    @media only screen and (max-width: $extra-large-device-width){@content}
+  }
+}
+

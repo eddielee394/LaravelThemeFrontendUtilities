@@ -1,0 +1,62 @@
+/* ==========================================================================
+*
+* Utilities
+* Typography
+*
+* - Custom Colors
+* - Background Colors
+* - Letter Spacing
+* - Letter Spacing Negative
+* - Opacity helpers
+** ========================================================================== */
+
+/* Custom Colors */
+.tcolor {color: $primary-color !important;}
+.tcolor-ext {color: $primary-color-ext !important;}
+
+.white {color: #fff !important;}
+.black {color: #2d2d2d !important;}
+.gray {color: #7c7c7c !important;}
+.gray2 {color: #545d60 !important;}
+.light-gray {color: #a8a8a8;}
+.light-gray2 {color: #dedede;}
+.light-gray3 {color: #c8c8c8;}
+.dark-gray {color: #343434 !important;}
+.orange {color: #e74c3c !important;}
+.blue {color: #3498db !important;}
+.b-gray {border-bottom-color: #898989 !important; }
+
+/* Backgrounds Colors */
+.bg-white {background-color: #fff !important;}
+.tbg {background-color: $primary-color !important;}
+.tbg-ext {background-color: $primary-color-ext !important;}
+.bg-gray {background-color: #6b6b6b !important;}
+.bg-lightgray {background-color: #ECECEC !important;}
+.bg-lightgray2 {background-color: #FEFEFE !important;}
+.bg-dark-gray {background-color: #353535 !important;}
+.bg-black-gray {background-color: #1b1b1b !important;}
+.bg-black-trans-50 {background-color: rgba(0,0,0,0.5)}
+
+/* Opacity helpers */
+.opacity0,
+.hov-opacity0:hover {opacity:0 ;}
+.opacity1,
+.hov-opacity1:hover {opacity:.1 ;}
+.opacity2,
+.hov-opacity2:hover {opacity:.2 ;}
+.opacity3,
+.hov-opacity3:hover {opacity:.3 ;}
+.opacity4,
+.hov-opacity4:hover {opacity:.4 ;}
+.opacity5,
+.hov-opacity5:hover {opacity:.5 ;}
+.opacity6,
+.hov-opacity6:hover {opacity:.6 ;}
+.opacity7,
+.hov-opacity7:hover {opacity:.7 ;}
+.opacity8,
+.hov-opacity8:hover {opacity:.8 ;}
+.opacity9,
+.hov-opacity9:hover {opacity:.9 ;}
+.opacity10,
+.hov-opacity10:hover {opacity:1 ;}
