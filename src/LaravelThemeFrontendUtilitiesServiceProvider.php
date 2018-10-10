@@ -13,11 +13,6 @@ class LaravelThemeFrontendUtilitiesServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'lamplightsolutions');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'lamplightsolutions');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
-
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
@@ -61,20 +56,10 @@ class LaravelThemeFrontendUtilitiesServiceProvider extends ServiceProvider
             __DIR__.'/../config/laravelthemefrontendutilities.php' => config_path('laravelthemefrontendutilities.php'),
         ], 'laravelthemefrontendutilities.config');
 
-        // Publishing the views.
-        /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/lamplightsolutions'),
-        ], 'laravelthemefrontendutilities.views');*/
-
         // Publishing assets.
-        /*$this->publishes([
+       $this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/lamplightsolutions'),
-        ], 'laravelthemefrontendutilities.views');*/
-
-        // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/lamplightsolutions'),
-        ], 'laravelthemefrontendutilities.views');*/
+        ], 'laravelthemefrontendutilities.views');
 
         // Registering package commands.
         // $this->commands([]);

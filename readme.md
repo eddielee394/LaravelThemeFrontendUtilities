@@ -5,7 +5,7 @@
 [![Build Status][ico-travis]][link-travis]
 [![StyleCI][ico-styleci]][link-styleci]
 
-This is where your description should go. Take a look at [contributing.md](contributing.md) to see a to do list.
+Various frontend themeing utilities and scss style classes for laravel development.  WORK IN PROGRESS.   
 
 ## Installation
 
@@ -16,7 +16,10 @@ $ composer require lamplightsolutions/laravelthemefrontendutilities
 ```
 
 ## Usage
-
+Publish assets
+```bash
+$ php artisan packager:publish MyVendor MyPackage https://github.com/myvendor/mypackage
+```
 ## Change log
 
 Please see the [changelog](changelog.md) for more information on what has changed recently.
@@ -29,7 +32,7 @@ $ composer test
 
 ## Contributing
 
-Please see [contributing.md](contributing.md) for details and a todolist.
+Just fork it...
 
 ## Security
 
@@ -37,7 +40,7 @@ If you discover any security related issues, please email author email instead o
 
 ## Credits
 
-- [author name][link-author]
+- [Eddie Padin][link-author]
 - [All Contributors][link-contributors]
 
 ## License
